@@ -10,7 +10,7 @@ addEventListener("DOMContentLoaded", async function() {
 		// to run on local server: npx http-server -p 8080
 
 		// live
-		const response = await fetch("https://sdev-module5-tutorial.onrender.com/api/songs");
+		const response = await fetch("https://sdev-module5-tutorial.onrender.com/api/courses");
 
 		if (!response.ok) {
 	    	throw new Error(`HTTP error! Status: ${response.status}`);
