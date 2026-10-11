@@ -10,6 +10,8 @@
 
     <!-- Link to external JavaScript file -->
     <script src="scripts/schedule.js"></script>
+    <script defer src="scripts/auth.js"></script>
+    <script defer src="scripts/init.js"></script>
 </head>
 <body>
 
@@ -38,6 +40,7 @@
                 
             </div>
             -->
+            <span id = "usernameText" class = "text-success"></span>
         </div>
     </nav>
 
@@ -53,6 +56,7 @@
                 <div class="nav flex-column nav-pills">
                     <a class="nav-link mb-2 text-start" href = "/index.html">Available Courses</a>
                     <a class="nav-link active mb-2 text-start" href = "/schedule.html">My Schedule</a>
+                    <a class="nav-link mb-2 text-start" href = "#" id = "logout">Logout</a>
                 </div>
               </div>
             </nav>
