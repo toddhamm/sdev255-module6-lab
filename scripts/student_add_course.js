@@ -111,6 +111,8 @@ addEventListener("DOMContentLoaded", async function() {
 
 		});
 
+		document.getElementById('searchBox').style.display="block";
+
 	} catch (error) {
     	console.error('Failed to fetch courses:', error);
  	}
