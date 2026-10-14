@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		try {
 
 			// dev
-			let url = "http://localhost:3000/api/auth";
+			//let url = "http://localhost:3000/api/auth";
 			
 			// live
-			// let url = "https://sdev-module5-tutorial.onrender.com/api/auth";
+			let url = "https://sdev-module5-tutorial.onrender.com/api/auth";
 
 			const response = await fetch(url, {
 			method: 'POST',

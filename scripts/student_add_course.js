@@ -11,11 +11,11 @@ addEventListener("DOMContentLoaded", async function() {
 		// response from server
 
 		// local host / dev
-		const coursesResponse = await fetch("http://localhost:3000/api/studentCourses/" + studentId);
+		//const coursesResponse = await fetch("http://localhost:3000/api/studentCourses/" + studentId);
 		// to run on local server: npx http-server -p 8080
 
 		// live
-		//const response = await fetch("https://sdev-module5-tutorial.onrender.com/api/studentCourses/" + studentId);
+		const response = await fetch("https://sdev-module5-tutorial.onrender.com/api/studentCourses/" + studentId);
 
 		if (!coursesResponse.ok) {
 		    throw new Error(`HTTP error! Status: ${coursesResponse.status}`);
@@ -139,10 +139,10 @@ addEventListener("DOMContentLoaded", async function() {
 	      // 
 	      
 	      // dev
-	      let url = "http://localhost:3000/api/addStudentCourse";
+	      // let url = "http://localhost:3000/api/addStudentCourse";
 	      
 	      // live
-	      // let url = "https://sdev-module5-tutorial.onrender.com/api/addStudentCourse";
+	      let url = "https://sdev-module5-tutorial.onrender.com/api/addStudentCourse";
 
 		  const response = await fetch(url, {
 				method: 'POST',
