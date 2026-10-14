@@ -14,10 +14,13 @@ class Auth {
 		}
 	}
 
+	// logout function
 	logOut(){
 		localStorage.removeItem("auth");
 		localStorage.removeItem("token");
 		localStorage.removeItem("username");
+		localStorage.removeItem("userType");
+		localStorage.removeItem("userId");
 
 		window.location.replace("/login.html");
 	}
