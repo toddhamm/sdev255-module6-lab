@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		e.preventDefault();
 
 		//alert('clicked...');
+		document.getElementById('error').style.display='none';
+		document.getElementById('success').style.display='none';
 
 		// from google: get form fields by their "name" attributes
 		const formData = new FormData(form);
@@ -27,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		try {
 
 			// dev
-			//let url = "http://localhost:3000/api/newUser";
+			// let url = "http://localhost:3000/api/newUser";
 			
 			// live
 			let url = "https://sdev-module5-tutorial.onrender.com/api/newUser";
@@ -54,7 +56,19 @@ document.addEventListener("DOMContentLoaded", () => {
 				// successDiv.classList.add("alert alert-success");
 
 				// Replace its contents with text
-				successDiv.textContent = "Account Created! ID: " + result._id;
+				successDiv.textContent = "Account Created! ID: " + result._id + ' ';
+
+				const element = document.getElementById("my-element");
+
+				// 1. Create the anchor element
+				const link = document.createElement("a");
+
+				// 2. Set its text content and destination URL
+				link.textContent = "Click here to login"; 
+				link.href = "login.html";
+
+				// add link
+				successDiv.appendChild(link);     
 
 				// show div
 				successDiv.style.display = "block";

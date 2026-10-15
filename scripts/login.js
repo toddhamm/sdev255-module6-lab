@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		try {
 
 			// dev
-			//let url = "http://localhost:3000/api/auth";
+			// let url = "http://localhost:3000/api/auth";
 			
 			// live
 			let url = "https://sdev-module5-tutorial.onrender.com/api/auth";
@@ -53,9 +53,9 @@ document.addEventListener("DOMContentLoaded", () => {
 				// token: ' + result.token;
 				// username: result.user[0].username
 				localStorage.setItem("token", result.token);
-				localStorage.setItem("username", result.user[0].username);
-				localStorage.setItem("userType", result.user[0].userType);
-				localStorage.setItem("userId", result.user[0]._id);
+				localStorage.setItem("username", result.username2);
+				localStorage.setItem("userType", result.userType);
+				localStorage.setItem("userId", result._id);
 				//localStorage.setItem("userType2", result.userType);
 				localStorage.setItem("auth", result.auth);
 
